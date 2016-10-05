@@ -16,6 +16,8 @@
 		C4A9D0A71DA4EFE4000C743D /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9D0A61DA4EFE4000C743D /* JavaScriptCoreViewController.m */; };
 		C4A9D0AA1DA4EFF3000C743D /* UIWebviewDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9D0A91DA4EFF3000C743D /* UIWebviewDelegateViewController.m */; };
 		C4A9D0AD1DA4EFFE000C743D /* WebViewJavascriptBridgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4A9D0AC1DA4EFFE000C743D /* WebViewJavascriptBridgeViewController.m */; };
+		C4A9D0B01DA4F779000C743D /* JavaScriptCore.html in Resources */ = {isa = PBXBuildFile; fileRef = C4A9D0AE1DA4F779000C743D /* JavaScriptCore.html */; };
+		C4A9D0B11DA4F779000C743D /* JSBridge.html in Resources */ = {isa = PBXBuildFile; fileRef = C4A9D0AF1DA4F779000C743D /* JSBridge.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		C4A9D0A91DA4EFF3000C743D /* UIWebviewDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIWebviewDelegateViewController.m; sourceTree = "<group>"; };
 		C4A9D0AB1DA4EFFE000C743D /* WebViewJavascriptBridgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewJavascriptBridgeViewController.h; sourceTree = "<group>"; };
 		C4A9D0AC1DA4EFFE000C743D /* WebViewJavascriptBridgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewJavascriptBridgeViewController.m; sourceTree = "<group>"; };
+		C4A9D0AE1DA4F779000C743D /* JavaScriptCore.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JavaScriptCore.html; sourceTree = "<group>"; };
+		C4A9D0AF1DA4F779000C743D /* JSBridge.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JSBridge.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 				C4A9D0901DA4EDF4000C743D /* ViewController.h */,
 				C4A9D0911DA4EDF4000C743D /* ViewController.m */,
 				C4A9D0931DA4EDF4000C743D /* Main.storyboard */,
+				C4A9D0AE1DA4F779000C743D /* JavaScriptCore.html */,
+				C4A9D0AF1DA4F779000C743D /* JSBridge.html */,
 				C4A9D0961DA4EDF4000C743D /* Assets.xcassets */,
 				C4A9D0981DA4EDF4000C743D /* LaunchScreen.storyboard */,
 				C4A9D09B1DA4EDF4000C743D /* Info.plist */,
@@ -185,6 +191,8 @@
 			files = (
 				C4A9D09A1DA4EDF4000C743D /* LaunchScreen.storyboard in Resources */,
 				C4A9D0971DA4EDF4000C743D /* Assets.xcassets in Resources */,
+				C4A9D0B11DA4F779000C743D /* JSBridge.html in Resources */,
+				C4A9D0B01DA4F779000C743D /* JavaScriptCore.html in Resources */,
 				C4A9D0951DA4EDF4000C743D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
