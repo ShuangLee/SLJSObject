@@ -48,3 +48,39 @@ JS运行的虚拟机，有独立的堆空间和垃圾回收机制。
 ![本地测试网页](http://ww4.sinaimg.cn/large/987b958agw1f8hhxt5e6pj20af0ijdg1.jpg)
 ![测试网页按钮点击](http://ww1.sinaimg.cn/large/987b958agw1f8hhytekukj20af0ijjro.jpg)
 
+### 3.WebViewJavascriptBridge交互方式
+通过第三方框架WebViewJavascriptBridge方式实现交互。
+#### 3.1. 创建WebViewJavascriptBridge
+```
+[WebViewJavascriptBridge enableLogging];
+_bridge = [WebViewJavascriptBridge bridgeForWebView:webView];
+[_bridge setWebViewDelegate:self];
+```
+#### 3.2. 注册js要调用Native
+注册需要调用js的名字和oc要进行的操作。
+
+```
+//handlerName:需要调用js的名字
+//handler:需要oc进行的操作
+- (void)registerHandler:(NSString *)handlerName handler:(WVJBHandler)handler;
+```
+
+WebViewJavascriptBridge方式实现交互调用方式。
+
+```
+[_bridge registerHandler:@"scanClick" handler:^(id data, WVJBResponseCallback responseCallback) {
+        //需要进行的操作
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"您点击了按钮" message:@"" preferredStyle:(UIAlertControllerStyleAlert)];
+        UIAlertAction *sureAlertAction = [UIAlertAction actionWithTitle:@"OK" style:(UIAlertActionStyleDefault) handler:^(UIAlertAction * _Nonnull action) {
+
+        }];
+        [alert addAction:sureAlertAction];
+        [self presentViewController:alert animated:YES completion:^{
+
+        }];
+    }];
+```
+
+#### 应用场景
+![](http://ww4.sinaimg.cn/large/987b958agw1f8hif6f85uj20af0ij3yr.jpg)
+![](http://ww3.sinaimg.cn/large/987b958agw1f8hifi00xtj20af0ij74l.jpg)
